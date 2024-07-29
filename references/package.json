@@ -4,7 +4,16 @@
   "description": "Demo todo for fullstack application",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install-server": "npm install",
+    "install-client": "cd client && npm install",
+    "install-prod": "npm ci && cd client && npm ci",
+    "prune-prod": "npm ci --omit=dev && cd client && npm ci --omit=dev",
+    "server": "nodemon server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\"",
+    "build-client": "cd client && npm run build",
+    "deploy-local": "npm run build-client && npm run server",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
