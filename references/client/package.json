@@ -9,6 +9,20 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nocturnalmc/todo-demo.git"
+  },
+  "keywords": [
+    "todo",
+    "demo"
+  ],
+  "author": "Azab-Kubur",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/nocturnalmc/todo-demo/issues"
+  },
+  "homepage": "https://github.com/nocturnalmc/todo-demo#readme",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
