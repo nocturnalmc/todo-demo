@@ -1,0 +1,43 @@
+{
+  "name": "todo-demo",
+  "version": "1.0.0",
+  "description": "Demo todo for fullstack application",
+  "main": "server.js",
+  "scripts": {
+    "install-server": "npm install",
+    "install-client": "cd client && npm install",
+    "install-prod": "npm ci && cd client && npm ci",
+    "prune-prod": "npm ci --omit=dev && cd client && npm ci --omit=dev",
+    "server": "nodemon server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\"",
+    "build-client": "cd client && npm run build",
+    "deploy-local": "npm run build-client && npm run server",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nocturnalmc/todo-demo.git"
+  },
+  "keywords": [
+    "todo",
+    "demo"
+  ],
+  "author": "Azab-Kubur",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/nocturnalmc/todo-demo/issues"
+  },
+  "homepage": "https://github.com/nocturnalmc/todo-demo#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}
