@@ -2,6 +2,7 @@
 
 - Introduction https://docs.google.com/presentation/d/1-f9mTJ7ig0561gnO1is76TprXmL4mfNe5eOKQv1JKF4/edit?usp=sharing
 - Fork this repo & clone it to start your fullstack application development
+- References folder contain completed demo application
 
 #### Setup Development Environment
 
