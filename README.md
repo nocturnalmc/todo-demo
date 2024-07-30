@@ -1,5 +1,6 @@
 ## DEMO TODO FULLSTACK APPLICATION
 
+- Introduction https://docs.google.com/presentation/d/1-f9mTJ7ig0561gnO1is76TprXmL4mfNe5eOKQv1JKF4/edit?usp=sharing
 - Fork this repo & clone it to start your fullstack application development
 
 #### Setup Development Environment
@@ -20,6 +21,11 @@ MacOS
 - Git `brew install git`
 - Lazygit https://github.com/jesseduffield/lazygit#homebrew
 - VSCode https://code.visualstudio.com/
+
+Git Configuration
+
+- `git config --global user.name "YOUR NAME HERE"`
+- `git config --global user.email "your@email.here"`
 
 VSCode Extensions
 
