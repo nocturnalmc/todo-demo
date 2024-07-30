@@ -61,4 +61,6 @@ VSCode setting.json
 
 ---
 
-Created by 'Azab Kubur' Team
+Created by 'Azab Kubur' Team.
+
+Project is licensed under the [MPL-2.0](references/LICENSE) license.
