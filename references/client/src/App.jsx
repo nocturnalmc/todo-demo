@@ -1,10 +1,7 @@
-import { useState } from 'react';
-import './App.css';
-
 function App() {
   return (
     <>
-      <div>
+      <div className='flex justify-center mt-5'>
         <h1>Bengkel Aplikasi</h1>
       </div>
     </>
