@@ -5,11 +5,11 @@ const {
   getSingleTodo,
   createTodo,
   updateTodo,
-  softDeleteTodo,
+  deleteTodo,
 } = require('../controllers/todo');
 
 router.route('/').get(getAllTodo).post(createTodo);
 router.route('/:todoId').get(getSingleTodo).patch(updateTodo);
-router.route('/delete/:todoId').patch(softDeleteTodo);
+router.route('/delete/:todoId').delete(deleteTodo);
 
 module.exports = router;

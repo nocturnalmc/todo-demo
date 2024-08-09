@@ -21,7 +21,7 @@ const updateTodo = async (req, res) => {
 };
 
 // PATCH /delete/:todoId
-const softDeleteTodo = async (req, res) => {
+const deleteTodo = async (req, res) => {
   // delete todo
 };
 
@@ -30,5 +30,5 @@ module.exports = {
   getSingleTodo,
   createTodo,
   updateTodo,
-  softDeleteTodo,
+  deleteTodo,
 };
