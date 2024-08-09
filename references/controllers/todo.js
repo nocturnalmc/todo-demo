@@ -52,8 +52,8 @@ const updateTodo = async (req, res) => {
   res.status(200).json({ msg: 'ok' });
 };
 
-// PATCH /delete/:todoId
-const softDeleteTodo = async (req, res) => {
+// DELETE /delete/:todoId
+const deleteTodo = async (req, res) => {
   const singleTodoDeleted = await Todo.findOneAndDelete({
     _id: req.params.todoId,
   });
@@ -72,5 +72,5 @@ module.exports = {
   getSingleTodo,
   createTodo,
   updateTodo,
-  softDeleteTodo,
+  deleteTodo,
 };

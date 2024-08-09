@@ -18,6 +18,9 @@ export default function TodoMain() {
         console.log(data.allTodo);
         setSemuaTodo(data.allTodo);
       } catch (error) {
+        if (error.response.status === 404) {
+          setSemuaTodo([]);
+        }
         console.error(error);
       }
     };
@@ -26,7 +29,7 @@ export default function TodoMain() {
 
   const deleteTodo = async (id) => {
     try {
-      const response = await axios.patch(`/api/todo/delete/${id}`);
+      const response = await axios.delete(`/api/todo/delete/${id}`);
       console.log(response.data);
       setReload(!reload);
     } catch (error) {
