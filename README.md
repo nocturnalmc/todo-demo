@@ -17,11 +17,11 @@ Windows
 
 MacOS
 
+- VSCode https://code.visualstudio.com/
 - Homebrew https://brew.sh/
 - NodeJS `brew install node@20`
 - Git `brew install git`
 - Lazygit https://github.com/jesseduffield/lazygit#homebrew
-- VSCode https://code.visualstudio.com/
 
 Git Configuration
 
