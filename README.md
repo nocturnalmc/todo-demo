@@ -8,12 +8,12 @@
 
 Windows
 
+- VSCode https://code.visualstudio.com/
 - NodeJS https://nodejs.org/en
 - Git https://git-scm.com/downloads
 - Terminal https://github.com/microsoft/terminal?tab=readme-ov-file#microsoft-store-recommended
 - Scoop https://github.com/ScoopInstaller/Install#readme
 - Lazygit https://github.com/jesseduffield/lazygit#scoop-windows
-- VSCode https://code.visualstudio.com/
 
 MacOS
 
