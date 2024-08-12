@@ -13,9 +13,11 @@ WORKDIR /usr/src/app
 # bundle app source
 COPY . .
 
+# set work dir to references
+WORKDIR /usr/src/app/references
+
 # install node_modules, build client React JS, delete node_modules server side, prune image for production, clear npm cache, delete unnecessary folder client side
-RUN cd references && \
-    npm run install-prod && \
+RUN npm run install-prod && \
     npm run build-client && \
     rm -rf node_modules && \
     npm run prune-prod && \
