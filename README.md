@@ -31,7 +31,6 @@
 #### 3. VSCode Extensions
 
 - Auto Rename Tag by Jun Han
-- DotENV by mikestead
 - Prettier - Code formatter by Prettier
 - Tailwind CSS IntelliSense by Tailwind Labs
 
@@ -47,13 +46,6 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
-  },
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "dotenv": false
   },
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true
